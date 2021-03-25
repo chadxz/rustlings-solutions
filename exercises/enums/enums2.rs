@@ -1,11 +1,12 @@
 // enums2.rs
 // Make me compile! Execute `rustlings hint enums2` for hints!
 
-// I AM NOT DONE
-
 #[derive(Debug)]
 enum Message {
-    // TODO: define the different variants used below
+    Move { x: u8, y: u8 }, // "struct-like" variant
+    Echo(String),          // variants holding data
+    ChangeColor(u8,u8,u8), // ---^
+    Quit
 }
 
 impl Message {
